@@ -7,13 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-User.destroy_all
-
-trev = User.create(
-    username: 'trev-trev'
-)
-
-
 Question.destroy_all
 
 q1 = Question.create(
@@ -48,34 +41,7 @@ q10 = Question.create(
 )
 
 
-Answer.destroy_all
 
-trev1 = Answer.create(
-    body: 'Aubre Tibbs',
-    user_id: trev.id,
-    question_id: q1.id
-)
-
-trev2 = Answer.create(
-    body: 'right now',
-    user_id: trev.id,
-    question_id: q2.id
-)
-trev3 = Answer.create(
-    body: 'too tall',
-    user_id: trev.id,
-    question_id: q3.id
-)
-trev4 = Answer.create(
-    body: 'shaq',
-    user_id: trev.id,
-    question_id: q4.id
-)
-trev4 = Answer.create(
-    body: 'FUCK NO',
-    user_id: trev.id,
-    question_id: q5.id
-)
 
 
 
