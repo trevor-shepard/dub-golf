@@ -24,6 +24,16 @@ body {
     color: #11402d;
     font-size: 5rem;
     line-height: 5rem;
+    text-align: center;
+}
+
+.error {
+    margin: 0px auto;
+    font-family: 'Roboto';
+    font-weight: bold;
+    color: rgb(162, 13, 73);
+    font-size: 3rem;
+    line-height: 3rem;
 }
 
 .input {
@@ -31,6 +41,8 @@ body {
     margin: 20px auto;
     border: none;
     padding: 10px;
+    font-size: 3rem;
+    text-align: center;
 }
 
 

@@ -59,13 +59,13 @@ class Questions extends React.Component {
     render() {
         let error
         if (this.state.error) {
-            errror = <div>{this.state.error}</div>
+            error = <div className='error'>{this.state.error}</div>
         }
         return(
             <div className='container'>
                 <h1 className='title'>{this.state.currQuestion? this.state.currQuestion.body : null}</h1>
                 {error}
-                <input className='input' id='answer-input' type="text" onChange={this.handleInput} />
+                <textarea className='input' id='answer-input' rows='4' onChange={this.handleInput} />
                 <input className='submit' type="button" value="Submit" onClick={this.handleSubmit} />
             </div>
         )

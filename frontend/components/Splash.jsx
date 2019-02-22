@@ -33,7 +33,7 @@ class Splash extends React.Component {
     render() {
         let message
         if (this.state.error) {
-            message = <div>{this.state.error}</div>
+            message = <div className='error'>{this.state.error}</div>
         }
 
         return(
