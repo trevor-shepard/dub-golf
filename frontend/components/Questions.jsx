@@ -62,11 +62,11 @@ class Questions extends React.Component {
             errror = <div>{this.state.error}</div>
         }
         return(
-            <div>
-                <h1>{this.state.currQuestion? this.state.currQuestion.body : null}</h1>
+            <div className='container'>
+                <h1 className='title'>{this.state.currQuestion? this.state.currQuestion.body : null}</h1>
                 {error}
-                <input id='answer-input' type="text" onChange={this.handleInput} />
-                <input type="button" value="Submit" onClick={this.handleSubmit} />
+                <input className='input' id='answer-input' type="text" onChange={this.handleInput} />
+                <input className='submit' type="button" value="Submit" onClick={this.handleSubmit} />
             </div>
         )
     }

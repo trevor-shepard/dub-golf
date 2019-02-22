@@ -1,3 +1,47 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body {
+    background: linear-gradient(180deg, #90F7EC, #32CCBC)
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px auto;
+    height: 100vh;
+    align-content: center;
+}
+
+.title{
+    margin: 0px auto;
+    font-family: 'Roboto';
+    font-weight: bold;
+    color: #11402d;
+}
+
+.input {
+    width: 50%;
+    margin: 20px auto;
+    border: none;
+    padding: 10px;
+}
+
+
+.submit {
+    width: min-content;
+    margin: 0px auto;
+    background: none;
+    fill: none;
+    border: 2px solid#11402d;
+    font-size: 2rem;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 5px 15px;
+    color: #11402d;
+}

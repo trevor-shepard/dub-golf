@@ -14,9 +14,7 @@ const App = ({ store }) => (
                 <Route path='/questions' component={Questions} />
                 <Route path='/finished' component={finished} />
                 <Route path='/superswiftysecretanswersdonttellplease' component={Users} />
-
                 <Route path='/' component={Splash} />
-
             </Switch>
         </HashRouter>
     

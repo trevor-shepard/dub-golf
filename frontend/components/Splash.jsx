@@ -22,7 +22,7 @@ class Splash extends React.Component {
 
     handleSubmit(e) {
         
-        if (this.state.username.length > 3) {
+        if (this.state.username.length > 2) {
             this.props.createUser(this.state.username)
         } else {
             this.setState({error: 'Too short dummy'})
@@ -37,15 +37,15 @@ class Splash extends React.Component {
         }
 
         return(
-            <div>
-                <h1>What's your name you little punk?</h1>
+            <div className="container">
+                <h1 className='title'>What's your name you little punk?</h1>
 
                 {message}
                 
-                <input type="text" onChange={this.handleInput}/>
+                <input className='input' type="text" onChange={this.handleInput}/>
 
 
-                <input type="button" value="Submit" onClick={this.handleSubmit} />
+                <input className='submit' type="button" value="Submit" onClick={this.handleSubmit} />
                 
             </div>
         )
